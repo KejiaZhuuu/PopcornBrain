@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popcorn Brain</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="breathe">
+    <img id="back" src="./images/back.png">
+    <img class="breathe-text" src="./images/breathe-text.png" alt="">
+    <img class="breathe-bg" src="./images/breathe-bg.png" />
+    <div class="breathe-niblet">
+      <img src="./images/breathe-niblet.png" />
+      <div class="mouth"></div>
+    </div>
+    <audio id='audio' autoplay src="./images/meditation20mins.mp3"></audio>
+  </div>
+  <script>
+    const backDom = document.getElementById('back');
+    backDom.onclick = () => {
+      console.log(123)
+      window.history.go(-1)
+    }
+
+    const audioDom = document.getElementById('audio');
+    audioDom && audioDom.click()
+    audioDom && audioDom.play()
+  </script>
+</body>
+
+</html>
