@@ -37,7 +37,7 @@ popcornDom.onclick = (e) => {
   explode.style.display = "flex"
   popAudio.play()
   setTimeout(() => {
-    window.location = '/bucket.html'
+    window.location = '/PopcornBrain/bucket.html'
   }, 500)
 }
 
